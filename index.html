@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <h1 class="text-center">Shopping List</h1> <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                   <div class="form-group">
+                    <label for="new-item">Item</label>
+                    <input type="text" class="form-control" id="new-item" placeholder="Item">
+                   </div> 
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-quantity">Quantity</label>
+                        <input type="text" class="form-control" id="new-quantity" placeholder="Quantity">
+                    </div>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-location">Location</label>
+                        <input type="text" class="form-control" id="new-location" placeholder="Location">
+                    </div> 
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id="add" class="btn btn-primary from-control">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Location</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    
+
+
+<script src="shoppingList.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+</body>
+</html>
